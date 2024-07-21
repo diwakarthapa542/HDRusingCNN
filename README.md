@@ -1,6 +1,6 @@
 # Digit Recognition WebApp, PyTorch, Flask
 
-**Demo Site : https://digit-recog-torch.uc.r.appspot.com/**
+<!-- **Demo Site : https://digit-recog-torch.uc.r.appspot.com/** -->
 
 ![Digit Recognition](./demo.gif)
 
