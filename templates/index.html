@@ -10,7 +10,7 @@
 
 <body>
     <p class="text-4xl text-center m-3">Handwritten Digit Recognition using CNN </p>
-    <p class="text-4xl text-center m-3">(WebApp using using PyTorch and Flask)  </p>
+    <p class="text-4xl text-center m-3">(WebApp using using PyTorch and Flask) </p>
     <div class="text-center">
         <a href="https://github.com/diwakarthapa542/HDRusingCNN">https://github.com/diwakarthapa542/HDRusingCNN</a>
         <div class="italic">created by : Diwakar Thapa</div>
@@ -19,7 +19,8 @@
     <div class="text-center">
         <div class="inline-block align-top m-1">
             <canvas class="border border-black" id="inputimg" width="196" height="196"></canvas>
-            <button class="bg-blue-50 hover:bg-blue-200 border border-blue-300 border-t-0 w-full" id="clearbtn">Clear</button>
+            <button class="bg-blue-50 hover:bg-blue-200 border border-blue-300 border-t-0 w-full"
+                id="clearbtn">Clear</button>
         </div>
         <div class="inline-block align-top m-1">
             <div class="border border-black text-9xl w-[198px] h-[198px] leading-[198px]" id="pred">0</div>
@@ -29,8 +30,8 @@
             <svg id="probGraph" width="250" height="196"></svg>
         </div>
     </div>
-
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- -     <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+    <script src="/static/js/script.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
 </body>
