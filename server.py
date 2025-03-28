@@ -26,7 +26,7 @@ def predict_digit():
     if predict is not None:
         res = predict(img)
         res_json["pred"] = int(res.argmax())
-        res_json["probs"] = [p * 100 for p in res]
+        res_json["probs"] = [float(p * 100) for p in res] #convert float32 to float
 
     return json.dumps(res_json)
 
@@ -65,4 +65,4 @@ if __name__ == "__main__":
     assert os.path.exists(SAVE_MODEL_PATH), "no saved model"
     predict = Predict()
 
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=5001, debug = False) #True for debug mode, False for production mode
